@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #00ffdd4f;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.header {
+    margin-bottom: 20px; 
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.header a {
+    color: #00ff08;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6); 
+    padding: 25px;
+    width: 350px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+    border: 1px solid #d1d1d1; 
+}
+
+.calc-text {
+    margin-bottom: 20px;
+    padding-left: 5px;
+    border: 2px solid #fff; 
+    border-radius: 10px;
+    padding: 10px; 
+    background: #ffffff; 
+    box-shadow: 0px 4px 10px rgb(0, 0, 0); 
+}
+
+.calc-text p {
+    width: 100%;
+    font-size: 3.5rem;
+    text-align: end;
+    background: transparent;
+    color: #000000;
+    border: none;
+    outline: none;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+button {
+    background: #333333;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 50%; 
+    cursor: pointer;
+    height: 65px;
+    width: 65px;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0); 
+}
+
+button:active,
+button:focus {
+    filter: brightness(120%);
+}
+
+.calc-keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 15px;
+    grid-column-gap: 10px;
+}
+
+.key-zero {
+    grid-column: span 2;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.key-operate {
+    background: #ff9501;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0); 
+}
+
+.key-others {
+    background: #a6a6a6;
+    color: #000000;
+    box-shadow: 0px 4px 10px rgb(0, 0, 0); 
+}
